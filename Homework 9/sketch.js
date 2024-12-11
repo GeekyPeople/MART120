@@ -43,7 +43,7 @@ function draw() {
 strokeWeight(2)
   fill(c3)
   arc(180, 235, 25, 30, .5, HALF_PI+QUARTER_PI);
-  
+  text('Caitlyn Asmussen', 5,490 )
 
 }
 
