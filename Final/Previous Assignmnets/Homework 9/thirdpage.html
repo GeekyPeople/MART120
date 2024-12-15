@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script>
+            function validateForm() {
+              var x = document.forms["myForm"]["fname"].value;
+              if (x == "" || x == null) {
+                alert("Name must be filled out");
+                return false;
+              }
+            }
+            </script>
+    </head>
+    <body>
+        <form action="nextPage.html" type="Post">
+            <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post" required>
+                Name: <input type="text" name="fname">
+                Email: <input type="text" id="email" required><br>
+                          Do you accept terms and conditions?<br>        
+                          <input type="radio" name="yes" required value="yes">Yes<br>
+                          <input type="radio" name="no" value="no">No<br> 
+                <input type="submit" value="Submit">
+              </form>
+          </form>
+
+          <a href="Homepage.html">Homepage</a>
+          <a href="secondpage.html">Second Page</a>
+    </body>
+</html>
